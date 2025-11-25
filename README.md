@@ -1,7 +1,7 @@
 # 🥕 Predictive Modeling for Carrot Quality, Carotenoid Content, and Damage Classification  
-### Spectral Techniques, Colorimetry & Artificial Intelligence
+### Article — Spectral Techniques, Colorimetry & Artificial Intelligence
 
-This repository contains the code used in **The artcile: Predictive modeling of carotenoid content and damage classification in carrots using spectral techniques, colorimetry, and AI_**, developed within the SGR-funded project:
+This repository contains the code used in the **article on predictive modeling of carotenoid content and damage classification in carrots using spectral techniques, colorimetry, and artificial intelligence**, developed within the SGR-funded project:
 
 **“Strengthening the Carrot Production Chain” (BPIN 2020000100192)**.
 
@@ -11,27 +11,31 @@ This repository contains the code used in **The artcile: Predictive modeling of 
 
 This repository integrates multiple machine-learning, spectral, and imaging workflows for carrot quality assessment under field and laboratory conditions.
 
-### 🌱 **1. Phenology Classification Model (UAV Orthomosaics)**  
-A machine-learning model trained on **spectral indices extracted from drone-based multispectral orthomosaics** to classify carrot crop phenological stages.
+---
 
-### 🌈 **2. Carotenoid Regression Model From Orthomosaics**  
-A regression framework for **estimating carotenoid content directly from spectral vegetation indices obtained from UAV imagery**, enabling non-destructive biochemical approximation at field scale.
+## 🌱 **1. Phenology Classification Model (UAV Orthomosaics)**  
+A machine-learning model trained on **spectral indices extracted from drone-based multispectral orthomosaics** to classify carrot crop phenological stages.
 
 ---
 
-## 🔬 **3. High-Resolution Carotenoid Model From Spectroradiometer Signatures**
+## 🌈 **2. Carotenoid Regression Model From Orthomosaics**  
+A regression model for **estimating carotenoid content directly from spectral vegetation indices obtained from UAV orthomosaics**, enabling non-destructive biochemical approximation under field conditions.
 
-A regression model built using **VIS–NIR spectral signatures (350–2500 nm)** collected with a **Spectral Evolution field spectroradiometer**.  
-This model provides fine biochemical estimation of carotenoids through feature extraction and multivariate modeling.
+---
+
+## 🔬 **3. High-Resolution Carotenoid Model From Laboratory Spectroradiometer Signatures**
+
+A regression model built using **VIS–NIR spectral signatures (350–2500 nm)** acquired **in laboratory conditions** using a **Spectral Evolution spectroradiometer**.  
+Spectral measurements were collected under controlled illumination and geometry, ensuring high-fidelity reflectance data for precise carotenoid estimation.
 
 ---
 
 ## 🎨 **4. RGB-Based Carotenoid Estimation Using a Custom Color Index (ICcarot)**
 
-An image-based carotenoid prediction pipeline derived from:
+An RGB image-based carotenoid prediction workflow derived from:
 
-- Extraction of **CIELAB color features (L*, a*, b*)**
-- Computation of the custom pigment-sensitive index **ICcarot**, defined as:
+- Extraction of **CIELAB color features** (L*, a*, b*)  
+- Computation of a custom pigment-sensitive index **ICcarot**, defined as:
 
 \[
 IC_{carot} = 0.7\left(\frac{b^*}{b^*_{max}}\right) + 
@@ -39,13 +43,13 @@ IC_{carot} = 0.7\left(\frac{b^*}{b^*_{max}}\right) +
              0.1\left(\frac{C^*}{C^*_{max}}\right)
 \]
 
-This index was calibrated with laboratory carotenoid measurements to classify samples into:
+The index was calibrated using laboratory carotenoid data to classify samples into:
 
 - **Low carotenoid content**
 - **Medium carotenoid content**
 - **High carotenoid content**
 
-and to support image-based regression models.
+and to support RGB-based regression models.
 
 ---
 
@@ -53,27 +57,17 @@ and to support image-based regression models.
 
 A deep-learning pipeline integrating:
 
-- A **Convolutional Neural Network**  
-- A **YOLO object detection model**  
+- A **Convolutional Neural Network**, and  
+- A **YOLO object detection model**
 
 to classify carrot roots into:
 
 - **Healthy**
-- **Pathogenic damage**
-- **Physiological damage**
-- **Mechanical damage**
+- **Pathogenic Damage**
+- **Physiological Damage**
+- **Mechanical Damage**
 
-This enables automated visual inspection and defect detection from RGB images captured during postharvest evaluation.
-
----
-
-## 📁 Repository Contents
-
-- `data/` – Color, spectral and chemical reference datasets  
-- `models/` – Trained model weights and pipelines  
-- `notebooks/` – Jupyter notebooks for training, evaluation and visualization  
-- `src/` – Image processing, spectral analysis and ML utilities  
-- `README.md` – Project overview  
+This system enables automated visual inspection and defect detection from RGB images captured during postharvest evaluation.
 
 ---
 
@@ -82,20 +76,31 @@ This enables automated visual inspection and defect detection from RGB images ca
 This repository supports a **multi-scale, multi-sensor approach** for:
 
 - Nutritional profiling  
-- Physiological evaluation  
-- Damage detection  
 - Phenological monitoring  
+- Physiological assessment  
+- Damage detection  
 
-combining  
-**RGB**, **multispectral orthomosaics**, **field spectroradiometry**, and **AI modeling**.
+combining **RGB imaging**, **multispectral drone orthomosaics**, **laboratory spectroradiometry**, and advanced **AI modeling**.
 
 ---
 
-## ⭐ Citation
+## 📜 Citation and Responsible Use
 
-If you use this repository, please cite:
+Anyone using the **datasets, models, scripts, or methodologies** in this repository **must cite and acknowledge the original source**, including:
 
-> _Chapter 3 – Predictive Modeling of Carotenoid Content and Damage Classification in Carrots Using Spectral Techniques, Colorimetry, and AI_  
+- The SGR project:  
+  **“Strengthening the Carrot Production Chain” (BPIN 2020000100192)**  
+- The corresponding scientific article associated with this repository  
+
+Failure to cite constitutes improper academic and scientific use.
+
+A formal citation will be added once the article is published.
+
+---
+
+## ⭐ Provisional Citation
+
+> _Predictive Modeling of Carotenoid Content and Damage Classification in Carrots Using Spectral Techniques, Colorimetry, and AI_.  
 > SGR Project BPIN 2020000100192.
 
 ---
