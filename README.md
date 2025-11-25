@@ -38,9 +38,7 @@ An RGB image-based carotenoid prediction workflow derived from:
 - Computation of a custom pigment-sensitive index **ICarot**, defined as:
 
 \[
-IC_{carot} = 0.7\left(\frac{b^*}{b^*_{max}}\right) + 
-             0.2\left(\frac{a^*}{a^*_{max}}\right) + 
-             0.1\left(\frac{C^*}{C^*_{max}}\right)<img width="990" height="322" alt="image" src="https://github.com/user-attachments/assets/9c042cef-5edf-423b-ba42-1627ebd02190" />
+<img width="990" height="322" alt="image" src="https://github.com/user-attachments/assets/9c042cef-5edf-423b-ba42-1627ebd02190" />
 
 \]
 
