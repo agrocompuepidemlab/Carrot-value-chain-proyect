@@ -37,10 +37,9 @@ An RGB image-based carotenoid prediction workflow derived from:
 - Extraction of **CIELAB color features** (L*, a*, b*)  
 - Computation of a custom pigment-sensitive index **ICarot**, defined as:
 
-\[
+
 <img width="990" height="322" alt="image" src="https://github.com/user-attachments/assets/9c042cef-5edf-423b-ba42-1627ebd02190" />
 
-\]
 
 The index was calibrated using laboratory carotenoid data to classify samples into:
 
