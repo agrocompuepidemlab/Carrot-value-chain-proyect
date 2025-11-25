@@ -1,7 +1,7 @@
 # 🥕 Predictive Modeling for Carrot Quality, Carotenoid Content, and Damage Classification  
-### Chapter 3 — Spectral Techniques, Colorimetry & Artificial Intelligence
+### Spectral Techniques, Colorimetry & Artificial Intelligence
 
-This repository contains the code used in **Chapter 3: _Predictive modeling of carotenoid content and damage classification in carrots using spectral techniques, colorimetry, and AI_**, developed within the SGR-funded project:
+This repository contains the code used in **The artcile: Predictive modeling of carotenoid content and damage classification in carrots using spectral techniques, colorimetry, and AI_**, developed within the SGR-funded project:
 
 **“Strengthening the Carrot Production Chain” (BPIN 2020000100192)**.
 
