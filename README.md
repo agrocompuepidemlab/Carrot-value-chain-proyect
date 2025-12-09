@@ -1,10 +1,12 @@
 # 🥕 Predictive Modeling for Carrot Quality, Carotenoid Content, and Damage Classification  
 ### Article — Spectral Techniques, Colorimetry & Artificial Intelligence
-https://doi.org/10.5281/zenodo.17872167
+
 This repository contains the code used in the **article on predictive modeling of carotenoid content and damage classification in carrots using spectral techniques, colorimetry, and artificial intelligence**, developed within the SGR-funded project:
 
 **“Strengthening the Carrot Production Chain” (BPIN 2020000100192)**.
-
+The raw datasets used to run all models presented in the article are available at the DOI:
+🔗 [https://doi.org/10.5281/zenodo.17872167](https://doi.org/10.5281/zenodo.17872167),
+where the complete, machine-readable data files supporting the analyses and results can be accessed.
 ---
 
 ## 📡 Overview of Models and Analytical Pipelines
