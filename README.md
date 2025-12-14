@@ -94,16 +94,15 @@ Below is a unified dictionary of common variables used across the four Jupyter n
 ---
 
 ## 🎨 **Color Index & CIELAB Variables**
-| Variable | Description |
-|---------|-------------|
+| Variable / Index | Description |
+|------------------|-------------|
 | `L` or `L*` | Lightness component (0 = black, 100 = white) |
 | `a` or `a*` | Green–red chromatic axis (+a* = red, −a* = green) |
 | `b` or `b*` | Blue–yellow chromatic axis (+b* = yellow, −b* = blue) |
-| `ICarot` | Custom carotenoid-sensitive index derived from L*, a*, b* |
+| `ICarot` | Custom carotenoid-sensitive index derived from L*, a*, b*. Classified into: **Low** (Bajo), **Medium** (Medio), **High** (Alto) carotenoid content. |
 | `Hue` | Color angle, indicator of pigment composition |
 | `Chroma` | Color saturation or purity |
-| `IC` | Image-based carotenoid index (generic) |
-
+| `IC` | Generic image-based carotenoid index |
 ---
 
 ## 🌾 **Spectral & UAV Variables**
